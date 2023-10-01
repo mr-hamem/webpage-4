@@ -1,0 +1,94 @@
+/* Your CSS styles for the entire website layout go here */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s ease, color 0.5s ease; 
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #2196F3;
+}
+
+button#darkModeToggle {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+.slider {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-item {
+    min-width: 100%;
+    flex-shrink: 0;
+    transition: transform 0.5s ease-in-out;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+button#contactButton {
+    background-color: #2196F3;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+button#contactButton a{
+    text-decoration: none;
+}
+
+/* Add dark mode styles here */
+body.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Additional styles for dark mode can be added here */
